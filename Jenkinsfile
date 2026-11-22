@@ -4,7 +4,7 @@ pipeline {
         stage('Compile') {
             steps {
                 echo 'Compiling...'
-                bat 'javac HelloWorld.java'
+                bat 'javac --release 8 HelloWorld.java'
             }
         }
         stage('Run') {
